@@ -4,6 +4,8 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    font-family: 'Pattaya', sans-serif;
+    
 }
 html {
     font-size: 62.5%;
@@ -61,7 +63,7 @@ body {
             position: relative;
             margin: 20px;
             border-radius: 25px;
-            background-color: #f4f6f7;
+            background-color: #ffee00;
             height: auto;
             flex: 1 1 500px;
             .prenchimento{
@@ -97,6 +99,16 @@ body {
                 place-items: center;
                 font-size: 8rem;
             }
+            .icons{
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+           
         }
     }
     

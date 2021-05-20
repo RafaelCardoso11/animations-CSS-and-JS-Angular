@@ -5,6 +5,7 @@
   height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Pattaya', sans-serif;
 }
 
 html {
@@ -98,7 +99,7 @@ body {
   position: relative;
   margin: 20px;
   border-radius: 25px;
-  background-color: #f4f6f7;
+  background-color: #ffee00;
   height: auto;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 500px;
@@ -151,6 +152,19 @@ body {
   display: grid;
   place-items: center;
   font-size: 8rem;
+}
+
+.carousel-container .carousel .items .icons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.carousel-container .carousel .items .icons img {
+  width: 100px;
+  height: 100px;
 }
 
 @-webkit-keyframes showView {
