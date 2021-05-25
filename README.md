@@ -11,7 +11,7 @@
 
 # O Projeto é todo em Angular.
 ## Para rodar o projeto instale o npm e execute-o com o comando:
-{% include "/intro_to_command_line/open_instructions.md" % npm start}
+```npm start```
 ## na pasta clonada.
 
 # Vídeo das animações:
