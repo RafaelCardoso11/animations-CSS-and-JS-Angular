@@ -1,0 +1,54 @@
+.backgroudGradient {
+    width: 100%;
+    height: 100%;
+    &.tradeBackgroud {
+        transition: 2s ease;
+        background-size: 400%, 900%;
+    }
+    position: fixed;
+    z-index: -1;
+    animation: gradientMover 15s ease-in alternate infinite;
+
+    background-image: linear-gradient(-45deg, #f9c743, #b31ed4, #952deb, #f9c743);
+    background-size: 300%, 300%;
+}
+.content-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .header-title {
+        text-align: center;
+        position: absolute;
+
+        top: calc(50% - 10rem);
+        transform: translateY(-1100%);
+        animation: showView 1s ease forwards;
+        font-size: 10rem;
+        color: white;
+    }
+}
+button {
+    animation: showView 2s ease forwards;
+    animation-delay: 200ms;
+    transform: translateY(200%);
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% + 100px);
+    left: calc(50% - 100px);
+    background: white;
+    outline: none;
+    border: 0;
+    font-size: 3.5rem;
+    height: 60px;
+    width: 180px;
+    border-radius: 10px;
+
+    &:hover {
+        transition: 300ms ease-in-out;
+        height: 70px;
+        width: 190px;
+        color: #952deb;
+        background: #ffee00;
+    }
+}

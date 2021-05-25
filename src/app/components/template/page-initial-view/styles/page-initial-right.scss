@@ -1,0 +1,85 @@
+
+.content-two-sobre {
+    animation: gradientMover 3s 1s forwards;
+
+    background-image: linear-gradient(-45deg, #f9c743, #b31ed4);
+    left: 100%; //para sair da tela
+    position: relative;
+    overflow-y: auto;
+    height: 100vh;
+    background-size: 900%, 900%;
+    &.on {
+        background-size: 900%, 900%;
+        left: 0;
+        transition: 600ms ease-in-out;
+    }
+    .content.on {
+        display: flex;
+        justify-content: center;
+
+        .msg-container {
+            position: absolute;
+            z-index: 1;
+            top: calc(50% - 14rem);
+            width: 70%;
+            overflow: hidden;
+            &::after {
+                animation: text-reveal-toLeftTo 2s ease forwards;
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        h1 {
+            opacity: 1;
+            text-align: center;
+
+            font-weight: 800;
+            font-size: 8rem;
+            animation: fade 900ms 1.3s ease-out forwards, colorTrade 3.2s 1s forwards;
+        }
+        .loadingImg {
+            animation: itemRotate 4.2s ease-out infinite, fadeReverse 700ms 2s forwards;
+            position: absolute;
+            bottom: calc(50% - 220px);
+            left: calc(50% - 35px);
+            width: 50px;
+            height: 50px;
+            z-index: 1;
+        }
+        .buttonNext{
+            display: none;
+            top: calc(50% + 80px);
+            &.on{
+                display: block;
+            }
+        }
+        .backgroud-model.on{
+            animation: widthTo100 400ms ease-in-out forwards;
+            background: #f9c743;
+            opacity: 1;
+            width: 100%;
+            height: 100vh;
+        }
+
+            .model-container.on {
+                transition: 0.2s;
+                background:slateblue;
+        
+                position: absolute;
+                z-index: 4;
+                top: calc(50% - 250px);
+              
+                border-radius: 20%;
+                box-shadow: 0px 3px 4px rgb(59, 59, 59);
+                width: 1000px;
+                height: 500px;
+                animation: widthTo100 600ms ease-in-out forwards;
+    
+        }
+    }
+}

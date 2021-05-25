@@ -1,0 +1,12 @@
+@keyframes text-reveal-toLeftTo {
+    0% {
+        background-color: white;
+        transform: translateX(-101%);
+    }
+    50% {
+        transform: translateX(101%);
+    }
+    100% {
+        transform: translateX(-101%);
+    }
+}

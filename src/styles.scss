@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pattaya", sans-serif;
+}
+html, body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100vw;
+    font-size: 45.5%;
+}
+
+
+
+//imports SCSS
+@import 'app/animations/keyframes/animation-fill-LeftToright';
+@import 'app/animations/keyframes/animation-mover-gradient';
+@import 'app/animations/keyframes/animation-view-letters';
+@import 'app/animations/keyframes/animation-rotate-loading';
+@import 'app/animations/keyframes/animation-colorTrade-BlackToWhite';
+@import 'app/animations/keyframes/animation-fade-opacityTo';
+@import 'app/animations/keyframes/animation-view-size';
+@import 'app/animations/keyframes/animation-textReveal-toLeftto';
+@import 'app/sizeResponsiveness/desktop-min-1001px';
+@import 'app/sizeResponsiveness/mobile-max-1000px';
