@@ -15,3 +15,4 @@
 ## na pasta clonada.
 
 # Vídeo das animações:
+https://github.com/RafaelCardoso11/animationsCSS/blob/main/video-readme.mkv
